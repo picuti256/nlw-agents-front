@@ -30,6 +30,7 @@ const createQuestionSchema = z.object({
 
 type CreateQuestionFormData = z.infer<typeof createQuestionSchema>;
 
+// biome-ignore lint/nursery/useConsistentTypeDefinitions: <explanation>
 interface QuestionFormProps {
 	roomId: string;
 }
